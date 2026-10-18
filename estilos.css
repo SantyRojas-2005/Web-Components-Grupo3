@@ -1,0 +1,53 @@
+/* ==========================================================================
+   estilos.css · Práctica de laboratorio: <tarjeta-producto>
+   Emprendimiento: RetroGroove Records (Venta de Discos de Vinilo)
+   ========================================================================== */
+
+/* PASO 3 · Color de marca del emprendimiento */
+:root {
+  --color-marca: #f59e0b; /* Ámbar dorado vintage de alta fidelidad */
+}
+
+/* Regla requerida por la rúbrica: La página define el color de marca para el componente */
+tarjeta-producto {
+  --color-marca: #f59e0b;
+}
+
+/* Estilos de la página */
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+  background-color: #09090b;
+  color: #f4f4f5;
+  margin: 0;
+  padding: 3rem 1.5rem 5rem;
+  min-height: 100vh;
+  background-image: 
+    radial-gradient(circle at 50% 0%, rgba(245, 158, 11, 0.08) 0%, transparent 45%),
+    radial-gradient(circle at 100% 50%, rgba(217, 119, 6, 0.04) 0%, transparent 35%);
+  background-attachment: fixed;
+}
+
+/* Título del emprendimiento */
+h1 {
+  text-align: center;
+  font-size: clamp(2rem, 4vw, 3rem);
+  font-weight: 800;
+  color: #ffffff;
+  margin-bottom: 3rem;
+  letter-spacing: -0.02em;
+  text-shadow: 0 4px 15px rgba(0, 0, 0, 0.5);
+}
+
+/* PASO 4 · Contenedor del catálogo para la(s) tarjeta(s) */
+.catalogo {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 340px));
+  gap: 2.5rem;
+  max-width: 1200px;
+  margin: 0 auto;
+  justify-content: center;
+}

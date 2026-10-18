@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>RetroGroove Records · Práctica de laboratorio</title>
+    <link rel="stylesheet" href="./estilos.css">
+
+    <!-- PASO 1 · La página solo importa el módulo del componente.
+       Ábrela con Live Server: los módulos no cargan con file:// -->
+    <script type="module" src="./componentes/tarjeta-producto.js"></script>
+</head>
+
+<body>
+    <!-- Cambia el título por el nombre de tu emprendimiento -->
+    <h1></h1>
+
+    <!-- PASO 4 · Usa la tarjeta tres veces (o cuatro para 4 integrantes) con productos REALES de tu emprendimiento:
+       cambia la foto, el nombre, la descripción y el precio de cada una.
+       De momento dejamos activa tu tarjeta (Integrante 1) y las otras tres listas para tus compañeros. -->
+    <main class="catalogo">
+
+        <!-- TARJETA 1 · Integrante 1 (Tu Vinilo) -->
+        <tarjeta-producto precio="42.50" destacado>
+            <img slot="foto" src="./img/vinilo-daft-punk.jpg" alt="Vinilo Random Access Memories de Daft Punk">
+            <h3 slot="nombre">Random Access Memories · Daft Punk</h3>
+            <p>Edición especial para coleccionistas prensada en vinilo negro de 180 gramos. Masterización analógica con
+                sonido envolvente de alta fidelidad.</p>
+        </tarjeta-producto>
+
+
+
+    </main>
+</body>
+
+</html>
