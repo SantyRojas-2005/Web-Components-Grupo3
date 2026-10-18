@@ -76,7 +76,11 @@ document.querySelector("tarjeta-producto").setAttribute("precio", "25");
 ```
 
 Resultado que vimos:
-> El precio del componente en pantalla se actualizó de inmediato a 25 sin necesidad de recargar la página, confirmando la reactividad de `attributeChangedCallback`.
+El precio del componente en pantalla se actualizó de inmediato a 25 sin necesidad de recargar la página, confirmando la reactividad de `attributeChangedCallback`.
+
+| Antes de la prueba | Después del cambio a precio="25" |
+| :---: | :---: |
+| ![Prueba inicial](./img/prueba1.png) | ![Prueba con precio modificado](./img/prueba2.png) |
 
 ## Reto extra (opcional)
 
