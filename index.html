@@ -10,6 +10,8 @@
     <!-- PASO 1 · La página solo importa el módulo del componente.
        Ábrela con Live Server: los módulos no cargan con file:// -->
     <script type="module" src="./componentes/tarjeta-producto.js"></script>
+    <script type="module" src="./componentes/tarjeta-accesorio.js"></script>
+    <script type="module" src="./componentes/tarjeta-artista.js"></script>
 </head>
 
 <body>
@@ -69,6 +71,35 @@
                 enérgica y visceral que cobra vida en el tocadiscos.</p>
         </tarjeta-artista>
 
+    </section>
+    <h2 class="seccion-titulo">Artistas Destacados</h2>
+    <section class="catalogo">  
+        <tarjeta-accesorio precio="22.00">
+      <h3 slot="nombre">Soporte de vinilos · Roble macizo</h3>
+      <img slot="foto" src="./img/Accesorio/SoporteRoble.png" alt="Soporte de vinilos de roble macizo con discos colocados en posición vertical">
+      <span slot="medidas">35×18×20 cm</span>
+      <span slot="peso">1.4 kg</span>
+      <span slot="compatibilidad">Discos de 10" y 12"</span>
+      <p>Soporte de madera natural para exhibir tu colección de vinilos y tener el disco más escuchado siempre a la vista.</p>
+    </tarjeta-accesorio>
+
+    <tarjeta-accesorio precio="24.00">
+      <h3 slot="nombre">Funda acrílica protectora para discos LP </h3>
+      <img slot="foto" src="./img/Accesorio/FundaAcrilica.png" alt="Funda transparente de acrílico que protege un disco LP de 12 pulgadas">
+      <span slot="medidas">31.5 × 31.5 cm</span>
+      <span slot="peso">0.4 kg</span>
+      <span slot="compatibilidad">LP de 12" · 33 rpm</span>
+      <p>Funda acrílica transparente que protege la portada de tus LP del polvo y la luz sin esconder el arte de la carátula.</p>
+    </tarjeta-accesorio>
+
+    <tarjeta-accesorio precio="20.00">
+      <h3 slot="nombre">Kit completo de limpieza de vinilos </h3>
+      <img slot="foto" src="./img/Accesorio/KitVinilos.png" alt="Kit de limpieza para discos de vinilo con cepillo y frasco de solución">
+      <span slot="medidas">18×12×6 cm</span>
+      <span slot="peso">0.6 kg</span>
+      <span slot="compatibilidad">Discos de 33 y 45 rpm</span>
+      <p>Kit completo con cepillo antistático y solución limpiadora para quitar el polvo y aliviar los saltos de tu vinilo.</p>
+    </tarjeta-accesorio>
     </section>
 </body>
 
