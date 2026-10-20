@@ -4,52 +4,47 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>RetroGroove Records · Práctica de laboratorio</title>
+    <title>Side B · Práctica de laboratorio</title>
     <link rel="stylesheet" href="./estilos.css">
 
-    <!-- PASO 1 · La página solo importa el módulo del componente.
-       Ábrela con Live Server: los módulos no cargan con file:// -->
-    <script type="module" src="./componentes/tarjeta-producto.js"></script>
-    <script type="module" src="./componentes/tarjeta-accesorio.js"></script>
-    <script type="module" src="./componentes/tarjeta-artista.js"></script>
+    <!-- El script principal app.js se carga al final del body -->
 </head>
 
 <body>
     <!-- Cambia el título por el nombre de tu emprendimiento -->
     <h1>Side B</h1>
 
-    <!-- PASO 4 · Usa la tarjeta tres veces (o cuatro para 4 integrantes) con productos REALES de tu emprendimiento:
-       cambia la foto, el nombre, la descripción y el precio de cada una.
-       De momento dejamos activa tu tarjeta (Integrante 1) y las otras tres listas para tus compañeros. -->
-    <main class="catalogo">
+    <main>
+        <h2 class="seccion-titulo">Catálogo de Vinilos</h2>
+        <section class="catalogo">
 
-        <!-- TARJETA 1 · Integrante Jhaldry Peñaherrera -->
-        <tarjeta-producto precio="42.50" destacado>
-            <img slot="foto" src="./img/Vinilos/Vinilo-Daft_Punk.jpg" alt="Vinilo Random Access Memories de Daft Punk">
-            <h3 slot="nombre">Random Access Memories · Daft Punk</h3>
-            <p>Edición especial para coleccionistas prensada en vinilo negro de 180 gramos. Masterización analógica con
-                sonido envolvente de alta fidelidad.</p>
-        </tarjeta-producto>
-        <tarjeta-producto precio="50.00" destacado>
-            <img slot="foto" src="./img/Vinilos/AfterHours.jpg" alt="Vinilo After Hours de The Weeknd">
-            <h3 slot="nombre">After Hours · The Weeknd</h3>
-            <p>The Weeknd's latest chapter via XO/Republic Records, After Hours, features global hits like "Heartless"
-                and "Blinding Lights"</p>
-        </tarjeta-producto>
-        <tarjeta-producto precio="30.00" destacado>
-            <img slot="foto" src="./img/Vinilos/unveranosinti.jpg" alt="Vinilo Un Verano Sin Ti de Bad Bunny">
-            <h3 slot="nombre">Un Verano Sin Ti · Bad Bunny</h3>
-            <p>El álbum más exitoso de Bad Bunny, con canciones que combinan reggaeton y trap en una experiencia
-                auditiva única.</p>
-        </tarjeta-producto>
-    </main>
+            <!-- TARJETA 1 · Integrante Jhaldry Peñaherrera -->
+            <tarjeta-producto precio="42.50" destacado>
+                <img slot="foto" src="./img/Vinilos/Vinilo-Daft_Punk.jpg" alt="Vinilo Random Access Memories de Daft Punk">
+                <h3 slot="nombre">Random Access Memories · Daft Punk</h3>
+                <p>Edición especial para coleccionistas prensada en vinilo negro de 180 gramos. Masterización analógica con
+                    sonido envolvente de alta fidelidad.</p>
+            </tarjeta-producto>
+            <tarjeta-producto precio="50.00" destacado>
+                <img slot="foto" src="./img/Vinilos/AfterHours.jpg" alt="Vinilo After Hours de The Weeknd">
+                <h3 slot="nombre">After Hours · The Weeknd</h3>
+                <p>The Weeknd's latest chapter via XO/Republic Records, After Hours, features global hits like "Heartless"
+                    and "Blinding Lights"</p>
+            </tarjeta-producto>
+            <tarjeta-producto precio="30.00" destacado>
+                <img slot="foto" src="./img/Vinilos/unveranosinti.jpg" alt="Vinilo Un Verano Sin Ti de Bad Bunny">
+                <h3 slot="nombre">Un Verano Sin Ti · Bad Bunny</h3>
+                <p>El álbum más exitoso de Bad Bunny, con canciones que combinan reggaeton y trap en una experiencia
+                    auditiva única.</p>
+            </tarjeta-producto>
+        </section>
 
     <h2 class="seccion-titulo">Artistas Destacados</h2>
     <section class="catalogo">
         <!-- TARJETA 2 · Integrante Diego Pinto -->
         <!-- ARTISTA 1 · The Weeknd -->
         <tarjeta-artista genero="R&B / Synthwave" oyentes="114M" vinilos="4" destacado>
-            <img slot="foto" src="./img/Artistas/the_weeknd.jpg" alt="The Weeknd">
+            <img slot="foto" src="./img/Artista/the_weeknd.jpg" alt="The Weeknd">
             <h3 slot="nombre">The Weeknd</h3>
             <p>Figura indiscutible del pop y R&B contemporáneo. Sus prensados en vinilo capturan una atmósfera
                 cinematográfica con bajos profundos y sintetizadores analógicos.</p>
@@ -57,7 +52,7 @@
 
         <!-- ARTISTA 2 · Daft Punk -->
         <tarjeta-artista genero="French House / Electrónica" oyentes="28M" vinilos="5" destacado>
-            <img slot="foto" src="./img/Artistas/daft_punk.jpg" alt="Daft Punk">
+            <img slot="foto" src="./img/Artista/daft_punk.jpg" alt="Daft Punk">
             <h3 slot="nombre">Daft Punk</h3>
             <p>Leyendas de la música electrónica francesa. Sus álbumes en vinilo son piezas de culto para audiófilos
                 gracias a su impecable fidelidad y riqueza rítmica.</p>
@@ -65,48 +60,55 @@
 
         <!-- ARTISTA 3 · CA7RIEL & Paco Amoroso -->
         <tarjeta-artista genero="Trap / Funk Experimental" oyentes="6.5M" vinilos="2" destacado>
-            <img slot="foto" src="./img/Artistas/catriel_paco.png" alt="CA7RIEL & Paco Amoroso">
+            <img slot="foto" src="./img/Artista/catriel_paco.png" alt="CA7RIEL & Paco Amoroso">
             <h3 slot="nombre">CA7RIEL & Paco Amoroso</h3>
             <p>Dúo argentino vanguardista que rompe esquemas fusionando rock, hip-hop y funk. Una experiencia sonora
                 enérgica y visceral que cobra vida en el tocadiscos.</p>
         </tarjeta-artista>
 
     </section>
-    <h2 class="seccion-titulo">Artistas Destacados</h2>
-    <section class="catalogo">  
+    <h2 class="seccion-titulo">Accesorios</h2>
+    <section class="catalogo">
+        <!-- TARJETA 3 · Integrante Israel Segovia -->
         <tarjeta-accesorio precio="22.00">
-      <h3 slot="nombre">Soporte de vinilos · Roble macizo</h3>
-      <img slot="foto" src="./img/Accesorio/SoporteRoble.png" alt="Soporte de vinilos de roble macizo con discos colocados en posición vertical">
-      <span slot="medidas">35×18×20 cm</span>
-      <span slot="peso">1.4 kg</span>
-      <span slot="compatibilidad">Discos de 10" y 12"</span>
-      <p>Soporte de madera natural para exhibir tu colección de vinilos y tener el disco más escuchado siempre a la vista.</p>
-    </tarjeta-accesorio>
+            <h3 slot="nombre">Soporte de vinilos · Roble macizo</h3>
+            <img slot="foto" src="./img/Accesorio/SoporteRoble.png"
+                alt="Soporte de vinilos de roble macizo con discos colocados en posición vertical">
+            <span slot="medidas">35×18×20 cm</span>
+            <span slot="peso">1.4 kg</span>
+            <span slot="compatibilidad">Discos de 10" y 12"</span>
+            <p>Soporte de madera natural para exhibir tu colección de vinilos y tener el disco más escuchado siempre a
+                la vista.</p>
+        </tarjeta-accesorio>
 
-    <tarjeta-accesorio precio="24.00">
-      <h3 slot="nombre">Funda acrílica protectora para discos LP </h3>
-      <img slot="foto" src="./img/Accesorio/FundaAcrilica.png" alt="Funda transparente de acrílico que protege un disco LP de 12 pulgadas">
-      <span slot="medidas">31.5 × 31.5 cm</span>
-      <span slot="peso">0.4 kg</span>
-      <span slot="compatibilidad">LP de 12" · 33 rpm</span>
-      <p>Funda acrílica transparente que protege la portada de tus LP del polvo y la luz sin esconder el arte de la carátula.</p>
-    </tarjeta-accesorio>
+        <tarjeta-accesorio precio="24.00">
+            <h3 slot="nombre">Funda acrílica protectora para discos LP </h3>
+            <img slot="foto" src="./img/Accesorio/FundaAcrilica.png"
+                alt="Funda transparente de acrílico que protege un disco LP de 12 pulgadas">
+            <span slot="medidas">31.5 × 31.5 cm</span>
+            <span slot="peso">0.4 kg</span>
+            <span slot="compatibilidad">LP de 12" · 33 rpm</span>
+            <p>Funda acrílica transparente que protege la portada de tus LP del polvo y la luz sin esconder el arte de
+                la carátula.</p>
+        </tarjeta-accesorio>
 
-    <tarjeta-accesorio precio="20.00">
-      <h3 slot="nombre">Kit completo de limpieza de vinilos </h3>
-      <img slot="foto" src="./img/Accesorio/KitVinilos.png" alt="Kit de limpieza para discos de vinilo con cepillo y frasco de solución">
-      <span slot="medidas">18×12×6 cm</span>
-      <span slot="peso">0.6 kg</span>
-      <span slot="compatibilidad">Discos de 33 y 45 rpm</span>
-      <p>Kit completo con cepillo antistático y solución limpiadora para quitar el polvo y aliviar los saltos de tu vinilo.</p>
-    </tarjeta-accesorio>
+        <tarjeta-accesorio precio="20.00">
+            <h3 slot="nombre">Kit completo de limpieza de vinilos </h3>
+            <img slot="foto" src="./img/Accesorio/KitVinilos.png"
+                alt="Kit de limpieza para discos de vinilo con cepillo y frasco de solución">
+            <span slot="medidas">18×12×6 cm</span>
+            <span slot="peso">0.6 kg</span>
+            <span slot="compatibilidad">Discos de 33 y 45 rpm</span>
+            <p>Kit completo con cepillo antistático y solución limpiadora para quitar el polvo y aliviar los saltos de
+                tu vinilo.</p>
+        </tarjeta-accesorio>
     </section>
 
 
 
-    
 
- <h2 class="seccion-titulo">Sesiones de Escucha</h2>
+
+    <h2 class="seccion-titulo">Sesiones de Escucha</h2>
     <section class="catalogo">
         <!-- TARJETA 4 · Eventos creado por Santiago Mauricio Nogales Pañora-->
         <tarjeta-evento fecha="25 OCT" hora="19:00" cupos="15 disponibles" destacado>
@@ -126,13 +128,11 @@
             <h3 slot="titulo">Noche Punk en Vinilo</h3>
             <p>Sesión de escucha de clásicos del punk en prensados originales. Side B, local principal.</p>
         </tarjeta-evento>
+        </section>
+    </main>
 
-    </section>
-
-
-
-
-
+    <!-- Importación centralizada de todos los Web Components -->
+    <script type="module" src="./app.js"></script>
 </body>
 
 </html>

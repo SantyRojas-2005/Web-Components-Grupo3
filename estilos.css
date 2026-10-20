@@ -8,9 +8,34 @@
   --color-marca: #f59e0b; /* Ámbar dorado vintage de alta fidelidad */
 }
 
-/* Regla requerida por la rúbrica: La página define el color de marca para el componente */
-tarjeta-producto {
+/* Regla requerida por la rúbrica: La página define el color de marca para los componentes */
+tarjeta-producto,
+tarjeta-artista,
+tarjeta-accesorio,
+tarjeta-evento {
   --color-marca: #f59e0b;
+}
+
+.seccion-titulo {
+  text-align: center;
+  font-size: 1.85rem;
+  font-weight: 800;
+  color: #ffffff;
+  margin: 4.5rem auto 2rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1.2rem;
+  letter-spacing: -0.01em;
+}
+
+.seccion-titulo::before,
+.seccion-titulo::after {
+  content: "";
+  height: 2px;
+  width: 45px;
+  background: var(--color-marca, #f59e0b);
+  opacity: 0.7;
 }
 
 /* Estilos de la página */
