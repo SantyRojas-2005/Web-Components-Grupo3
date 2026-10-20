@@ -1,6 +1,3 @@
-// componentes/tarjeta-producto.js
-// Práctica de laboratorio · Construye <tarjeta-producto> (Actividad 8 de las diapositivas)
-// Completa cada PASO. Los números son los mismos de la diapositiva y de la tarea en Moodle.
 
 // ───────── PASO 2 · Plantilla con Shadow DOM y slots ─────────
 // Una sola plantilla, declarada fuera de la clase.
@@ -109,7 +106,7 @@ plantilla.innerHTML = `
 
 export class TarjetaProducto extends HTMLElement {
 
-    // PASO 3 · Indica qué atributos observa el componente.
+  // PASO 3 · Indica qué atributos observa el componente.
   static get observedAttributes() {
     return ["precio"];
   }
@@ -117,7 +114,7 @@ export class TarjetaProducto extends HTMLElement {
     super();
     // PASO 2 · Crea el Shadow DOM en modo "open".
     // Recuerda: aquí no se leen atributos ni se dibuja HTML.
-    this.attachShadow({ mode:"open"});
+    this.attachShadow({ mode: "open" });
   }
   connectedCallback() {
     // PASO 2 · Agrega al Shadow DOM una COPIA de la plantilla con cloneNode(true).
@@ -129,7 +126,7 @@ export class TarjetaProducto extends HTMLElement {
     // PASO 3 · Cuando cambie "precio", actualiza lo que se ve en pantalla.
     // Ojo: si el atributo ya viene escrito en el HTML, este método se ejecuta
     // ANTES que connectedCallback; comprueba que la plantilla ya esté clonada.
-    if (nombre !=="precio") return;
+    if (nombre !== "precio") return;
     if (!this.shadowRoot || !this.shadowRoot.querySelector("#precio")) return;
     this.actualizarPrecio();
   }
@@ -144,7 +141,7 @@ export class TarjetaProducto extends HTMLElement {
       elemento.textContent = this.formatearPrecio(this.precio);
     }
   }
-   // PASO 3 · La propiedad lee y escribe el atributo, así quedan sincronizados.
+  // PASO 3 · La propiedad lee y escribe el atributo, así quedan sincronizados.
   get precio() {
     return this.getAttribute("precio") || 0;
   }

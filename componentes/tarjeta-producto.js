@@ -1,6 +1,3 @@
-// componentes/tarjeta-producto.js
-// Práctica de laboratorio · Construye <tarjeta-producto> (Actividad 8 de las diapositivas)
-// Emprendimiento: Tienda de Discos de Vinilo (RetroGroove Records)
 
 // ───────── PASO 2 · Plantilla con Shadow DOM y slots ─────────
 // Una sola plantilla, declarada fuera de la clase.

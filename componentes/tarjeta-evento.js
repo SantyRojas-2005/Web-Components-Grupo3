@@ -1,7 +1,4 @@
-// componentes/tarjeta-evento.js
-// Práctica de laboratorio · Componente <tarjeta-evento>
-// Emprendimiento: Side B (Venta de Discos de Vinilo)
-// Listening parties / sesiones de escucha
+
 
 // ───────── Plantilla con Shadow DOM y slots ─────────
 const plantilla = document.createElement("template");
