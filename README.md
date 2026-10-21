@@ -7,7 +7,7 @@ Programación Integrativa de Componentes Web · Unidad 1: Web Components
 | Emprendimiento | Side B (Venta de Discos de Vinilo) |
 | Estudiantes (Apellido Nombre) | Jhaldry Peñaherrera, Diego Pinto, Israel Segovia, Santiago Nogales |
 | NRC | 36642 |
-| Fecha | Octubre 2026 |
+| Fecha | 20 de Octubre 2026 |
 | Enlace del repositorio | https://github.com/SantyRojas-2005/Web-Components-Grupo3.git |
 
 ## Propuesta del emprendimiento
@@ -85,7 +85,7 @@ Programación Integrativa de Componentes Web · Unidad 1: Web Components
 | **Jhaldry Peñaherrera** | `<tarjeta-producto>` | Creó el módulo `tarjeta-producto.js` con Shadow DOM, slots de foto/nombre y reactividad de precio. Diseñó la arquitectura base de estilos, la centralización modular en `app.js` y la tarjeta de Daft Punk en la rama `feature/jhaldry`. |
 | **Diego Pinto** | `<tarjeta-artista>` | Creó el módulo `tarjeta-artista.js` con soporte para foto circular de artista, chip de género musical, contadores de oyentes mensuales y vinilos en stock, integrando a The Weeknd, Daft Punk y CA7RIEL & Paco Amoroso en la rama `feature/diego`. |
 | **Israel Segovia** | `<tarjeta-accesorio>` | Creó el módulo `tarjeta-accesorio.js` con slots especializados para ficha técnica (`medidas`, `peso`, `compatibilidad`), atributo reactivo `precio` e integró los artículos de exhibición y cuidado de vinilos en la rama `feature/israel`. |
-| **Santiago Mauricio Nogales Pañora** | `<tarjeta-evento>` | Creó el módulo `tarjeta-evento.js` con slots de portada panorámica 16:9 y título, atributos reactivos de `fecha`, `hora` y `cupos`, implementando las sesiones de escucha comunitarias en la rama `feature/santiago`. |
+| **Santiago  Nogales** | `<tarjeta-evento>` | Creó el módulo `tarjeta-evento.js` con slots de portada panorámica 16:9 y título, atributos reactivos de `fecha`, `hora` y `cupos`, implementando las sesiones de escucha comunitarias en la rama `feature/santiago`. |
 
 ---
 
@@ -116,5 +116,5 @@ document.querySelector("tarjeta-producto").setAttribute("precio", "25");
 ## Uso de inteligencia artificial
 
 - **Herramienta usada:** Antigravity AI
-- **Para qué la consultamos:** Para estructurar la arquitectura modular de Custom Elements según los estándares W3C, revisar el ciclo de vida de los componentes (`connectedCallback`, `attributeChangedCallback`), depurar rutas relativas de recursos multimedia y organizar la integración semántica de las ramas.
-- **Qué comprobamos nosotros:** Probamos el renderizado en vivo en el navegador, validamos el comportamiento reactivo en consola, organizamos las imágenes en sus carpetas correspondientes y redactamos las descripciones técnicas y datos reales del emprendimiento.
+- **Para qué la consultamos:** El uso de la inteligencia artificial se enfoco principalmente en la corrección de errores y mejora visual con algún estilo. También se utilizo la IA al momento de revisar la correcta estructuración de las tarjetas con el objetivo de lograr un correcto funcionamiento y estructura.
+- **Qué comprobamos nosotros:** Se realizo la validación del renderizado de las 4 tarjetas en el navegador, asimismo se valido que cumpla con el comportamiento requerido en la consola. Finalmente se realizo el cargado de las imágenes respectivas y se complementó la información de cada tarjeta.
